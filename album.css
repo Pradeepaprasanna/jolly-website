@@ -1,0 +1,142 @@
+body {
+    
+    background-image:url('alb bc.jpeg');
+    background-size: cover;  
+    /* background-color: rgb(15, 109, 116); */
+}
+
+h1 {
+    color: rgb(73, 204, 8);
+}
+
+h4 {
+    color: azure;
+}
+
+
+.nav {
+    color: rgb(173, 13, 13);
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 120px;
+
+}
+
+span {
+    color: rgb(58, 120, 212);
+}
+
+.nav li {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 35px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(243, 238, 238);
+    font-size:25px;
+}
+
+.nav li a:hover {
+    color: rgb(201, 104, 104);
+    transform: scale(1.2);
+    transition: transform 1s ease-out;
+}
+
+.imge img {
+
+    float: left;
+    margin-left: 50px;
+    width: 150px;
+    /* margin-bottom: 400px; */
+}
+#image img{
+width: 100%;
+height: 650px;
+
+}
+h2{
+    background-color:  rgb(103, 161, 8);
+    text-align: center;
+    margin-top: 30px;
+   
+}
+ .container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.container2{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+
+@media (max-width: 1200px) {
+  .container1, .container2, .container3 {
+    grid-template-columns: repeat(3, 1fr) ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+  }
+  
+  .nav {
+    float: none ;
+    justify-content: center ;
+    margin: 20px auto ;
+  }
+  
+  .nav li {
+    margin: 10px ;
+  }
+  
+  .imge img {
+    float: none ;
+    display: block ;
+    margin: 20px auto ;
+  }
+  
+  h2 {
+    margin-left: 0 ;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1, .container2, .container3 {
+    grid-template-columns: repeat(2, 1fr) ;
+  }
+  
+  .nav li a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container1, .container2, .container3 {
+    grid-template-columns: 1fr;
+    margin-left: 5px ;
+    margin-right: 5px ;
+  }
+  
+  .nav li a {
+    font-size: 16px ;
+  }
+  
+  h1, h2, h4 {
+    font-size: 1.2rem ;
+    margin-left: 0 ;
+    text-align: center ;
+  }
+}
+
+

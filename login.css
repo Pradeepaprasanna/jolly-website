@@ -1,0 +1,169 @@
+body {
+    background-image: url('m2.webp');
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(12, 12, 12);
+}
+
+.nav {
+    color: rgb(173, 13, 13);
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 120px;
+
+}
+
+span {
+    color: rgb(18, 230, 230);
+}
+
+.nav li {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 35px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    font-size: 25px;
+}
+
+.nav li a:hover {
+   border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(15, 15, 15);
+    color: rgb(242, 245, 239);
+    transform: scale(1.2);
+    transition: transform 1s ease-out;
+}
+
+.imge img {
+
+    float: left;
+    margin-left: 50px;
+    width: 150px;
+}
+
+form {
+    background-color: rgb(253, 248, 248, 0.1);
+    text-align: center;
+    max-width: 450px;
+    margin-top: 200px;
+    margin-left: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 600px;
+    box-shadow: 4px 6px 5px 8px;
+}
+
+/* form:hover{
+    color: crimson;
+   
+    
+} */
+
+
+form button {
+    color: rgb(10, 10, 10);
+    background-image:linear-gradient(to right,white,black);
+    width: 100px;
+    height: 40px;
+}
+
+.input input {
+    width: 70%;
+    height: 40px;
+    border: 1px solid rgb(14, 13, 13);
+}
+
+.input label {
+    margin-right: 220px;
+    font-size: 25px;
+}
+
+.gender label {
+    font-weight: 300;
+    font-size: 22px;
+}
+.date label{
+font-size: 22px;
+}
+.date input{
+    font-size: 18px;
+}
+
+.reg a {
+    margin-top: 300px;
+    margin-right: 35px;
+    padding: 40px 50px;
+}
+@media (max-width: 1024px) {
+  form {
+    margin-left: auto ;
+    margin-right: auto ;
+    max-width: 90% ;
+    height: auto ;
+    margin-top: 150px ;
+  }
+  .nav {
+    float: none ;
+    justify-content: center ;
+    margin: 40px 20px ;
+  }
+  .imge img {
+    float: none ;
+    display: block ;
+    margin-left: auto;
+    margin-right: auto ;
+    width: 120px ;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column ;
+    align-items: center ;
+    float: none ;
+    margin: 20px auto ;
+  }
+  .nav li {
+    margin: 10px 0 ;
+    display: block ;
+  }
+  .nav li a {
+    font-size: 20px ;
+  }
+  form {
+    margin-top: 100px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 95% ;
+    padding: 15px ;
+    height: auto ;
+  }
+  .input input {
+    width: 100% ;
+  }
+  .input label {
+    margin-right: 0 ;
+    display: block ;
+    margin-bottom: 8px ;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px ;
+  }
+  .nav li a {
+    font-size: 18px ;
+  }
+  form button {
+    width: 100% ;
+  }
+}

@@ -1,0 +1,205 @@
+body {
+
+    background-color: rgb(17, 17, 17);
+}
+
+h1 {
+    color: rgb(233, 79, 19);
+    margin-right: 160px;
+}
+
+h2 {
+    color: rgb(33, 196, 187);
+    margin-left: 40%;
+    margin-top: 200px;
+    font-size: 25px;
+}
+div h2{
+    color: rgb(13, 216, 216);
+    margin-left: 42%;
+    margin-top: 110px;
+}
+
+h3 {
+    color: blanchedalmond;
+    margin-left: 39%;
+}
+
+h4 {
+    color: rgb(241, 248, 247);
+    margin-left: 40%;
+    font-size: 20px;
+}
+
+span {
+    color: rgb(174, 216, 58);
+}
+
+.nav {
+    color: rgb(13, 173, 106);
+    float: right;
+    display: inline-flex;
+    margin: 40px 120px;
+   
+   
+
+}
+.nav li {
+    display:flex;
+    margin: 0px 35px;
+   
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(243, 239, 239);
+    font-size: 25px;
+   
+   
+   
+    
+
+}
+.nav li a:hover{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(251, 253, 253);
+    color: rgb(20, 20, 20);
+    transform: scale(1.2);
+    transition: transform 1s ease-out;  
+
+}
+
+
+/* .nav li a:hover { */
+      /* position: relative;  */
+    /* color: rgb(61, 231, 9); */
+    /* font-size: 20px; */
+     /* background-color: aquamarine;  */
+     /* padding:0px,10px ;   */
+    /* transform: scale(1.3); */
+    /* transition: transform 1s ease-out; */
+
+
+.imge img {
+
+    float: left;
+    margin-left: 50px;
+    width: 150px;
+    
+}
+
+p {
+    color: rgb(243, 233, 233);
+    font-size: 20px;
+}
+
+.image {
+    margin-top: 150px;
+    margin-left: 28%;
+}
+
+
+.vid {
+    margin-left: 32%;
+   
+}
+
+a {
+    margin-left: 45%;
+    font-size: 25px;
+}
+
+.header {
+    margin-left: 10%;
+}
+
+address {
+    color: bisque;
+    margin-left: 41%;
+}
+
+marquee {
+    color: white;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1200px) {
+  
+  h1, h2, h3, h4, p, address, a {
+    margin-left: 0 ;
+    margin-right: 0 ;
+    text-align: center ;
+  }
+  .nav {
+    float: none ;
+    display: flex ;
+    justify-content: center ;
+    flex-wrap: wrap ;
+    margin: 20px auto ;
+  }
+  .nav li {
+    margin: 10px ;
+    flex-direction: column ;
+  }
+  .imge img {
+    float: none ;
+    display: block ;
+    margin: 20px auto ;
+  }
+  .image, .vid, .header {
+    margin-left: 0 ;
+    text-align: center ;
+  }
+  a {
+    display: block ;
+    margin: 20px auto ;
+    text-align: center ;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column ;
+    align-items: center ;
+  }
+  .nav li {
+    margin: 8px 0 ;
+  }
+  .nav li a {
+    font-size: 20px ;
+  }
+  h1 {
+    font-size: 1.8rem ;
+  }
+  h2, h3, h4 {
+    font-size: 1.3rem ;
+    margin-top: 50px ;
+  }
+  p {
+    font-size: 1rem ;
+  }
+  a {
+    font-size: 1.1rem ;
+  }
+  address {
+    font-size: 1rem ;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav li a {
+    font-size: 16px ;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1.1rem ;
+  }
+  p, address, a {
+    font-size: 0.95rem ;
+  }
+  marquee {
+    font-size: 1rem ;
+    text-align: center ;
+  }
+}
